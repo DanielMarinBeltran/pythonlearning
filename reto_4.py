@@ -1,12 +1,10 @@
-
+nombre = input('Digite su nombre: ')
 horas_trabajadas = int(input('Digite las horas trabajadas: '))
 valor_hora = int(input('Digite el valor de la hora: '))
-# nombre = input('Digite su nombre: ')
 
 
 def sueldo():
-    valor_horas_extra = 0
-    horas_extra = 0
+
 
     if horas_trabajadas > 40:
         horas_extra = horas_trabajadas - 40
@@ -16,11 +14,9 @@ def sueldo():
     elif horas_trabajadas <= 40:
         horas_extra = 0
         horas_normales = horas_trabajadas
-        horas_a_pagar_en_total = horas_trabajadas * valor_hora
         valor_horas_extra = 0
 
     horas_a_pagar_en_total = horas_normales * valor_hora
-    
     sueldo_bruto = horas_a_pagar_en_total + valor_horas_extra
     parafiscales = sueldo_bruto * 0.09
     salud = sueldo_bruto * 0.04
