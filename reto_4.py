@@ -41,5 +41,4 @@ def sueldo():
     print(intereses_cesantias)
     print(provisiones_vacaciones)
 
-
 sueldo()
